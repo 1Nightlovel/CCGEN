@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ccgenightlovel</title>
+    <link rel="stylesheet" href="css/ccgen_style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="ccgen();">
+<div align="center">
+
+    <header style="background-color: black">
+        <section class="title"> + Night Lovel + Credit Card Generator</section>
+    </header>
+
+    <br>
+    <div class="principal">&nbsp;
+        <form class="form-horizontal" id="console" method="POST" name="console" role="form">
+            <div class="p">
+                <div class="Ilabel">Inserta BIN</div>
+                <input class="input_text" id="ccpN" maxlength="19" name="ccp" placeholder="xxxx xxxx xxxx xxxx"
+                    style="width: 175px" type="text" value="" />
+            </div>
+            <br />
+            <select class="input_text" name="ccnsp" style="display:none;">
+                <option selected="selected">None</option>
+            </select>
+
+            <div class="p">
+                <div class="Ilabel">Incluir</div>
+
+                <div class="input_text s">
+                    <label>Fecha<input checked="checked" id="ccexpdat" name="ccexpdat"type="checkbox" /></label>
+                    <label>CCV2<input checked="checked" id="ccvi" name="ccvi"type="checkbox" /></label>
+                    <label>Información banco<input id="ccbank" name="ccbank"type="checkbox" /></label>
+                </div>
+            </div>
+            &nbsp;
+            <br>
+            <div class="p">
+                <div class="Ilabel">Cantidad</div>
+                <input class="input_text" maxlength="4" name="ccghm" style="width: 40px" type="text" value="10" />
+            </div>
+
+            <div class="p">
+                <div class="Ilabel">Formato</div>
+                <select class="input_text" name="ccoudatfmt">
+                    <option selected="selected" value="CHECKER">CHK</option>
+                    <option value="CSV">CSV</option>
+                    <option value="XML">XML</option>
+                    <option value="JSON">JSON</option>
+                </select>
+            </div>
+            &nbsp;<br>
+
+            <div class="p">
+                <div class="Ilabel">CCV2</div>
+                <input class="input_text" id="eccv" maxlength="4" name="eccv" style="width: 40px" type="text"
+                    value="rnd" />
+            </div>
+            &nbsp;
+
+            <div class="p">
+                <div class="Ilabel">Mes</div>
+                <select class="input_text" name="emeses">
+                    <option value="rnd">Random</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+
+            <div class="p">
+                <div class="Ilabel">Año</div>
+                <select class="input_text" name="eyear">
+                    <option value="rnd">Random</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                </select>
+            </div>
+            <input name="tr" type="hidden" value="1000" /> <input name="L" style="width: 20px" type="hidden"
+                value="1L" /><br />
+            <br />
+            <a class="Lbutton" id="gerar" name="gerar"> Generar Tarjetas</a><br />
+            <br />
+
+            <div align="center">
+                <div class="eighty">
+                    <div>
+                        <div class="clean" id="cleanText"></div>
+                    </div>
+
+                    <p><textarea class="textarea" id="output2" name="output2" readonly="readonly" rows="11"></textarea>
+                    </p>
+            </div>
+            
+        </form>
+
+       
+    </div>
+        
+    
+</div>
+<header style="background-color: black;">
+        <section class="title"> + Night Lovel + Agradecimientos a Nightm4re</section>
+    </header>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/ccgen_eng.js"></script>
+
+</body>
+</html>
